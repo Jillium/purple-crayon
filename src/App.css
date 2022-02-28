@@ -36,4 +36,5 @@
 .profile-pic {
   height: 45%;
   width: 45%;
+  cursor: crosshair;
 }

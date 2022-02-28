@@ -10,13 +10,18 @@ import pic6 from "../assets/profilepics/pic6.JPG";
 function About() {
 
     const [chosenPic, setNewPic ] = useState(pic1);
+    const pictureChoices = [pic1, pic2, pic3, pic4, pic5, pic6]
+    
 
     function changePicture() {
 
-       
-        const pictureChoices = [pic1, pic2, pic3, pic4, pic5, pic6 ]
 
+        
+       
+        
+        // flips through the pics randomly
         var index = Math.floor(Math.random() * pictureChoices.length)
+        
 
         var randomPicture = pictureChoices[index];
         setNewPic(randomPicture);
