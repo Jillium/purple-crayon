@@ -2,7 +2,12 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'; // v5
 
-import MyPic from './components/MyPic';
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NoMatch from "./pages/NoMatch";
+import Portfolio from "./pages/Portfolio";
+import Resume from "./pages/Resume";
+
 
 function App() {
   return (
@@ -32,10 +37,19 @@ function App() {
 
 
       </div>
+      <Switch>
+        <Route exact path="/" render={() => <About />} />
+        <Route exact path="/contact" render={() => <Contact />} />
+        <Route exact path="/portfolio" render={() => <Portfolio />} />
+        <Route exact path="/resume" render={() => <Resume />} />
+
+        <Route compononent={NoMatch} />
+
+      </Switch>
       </Router>
 
 
-        <MyPic />
+        
     </div>
   );
 }
