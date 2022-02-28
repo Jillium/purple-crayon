@@ -32,3 +32,8 @@
   justify-items: center;
   margin-left: 10px;
 }
+
+.profile-pic {
+  height: 45%;
+  width: 45%;
+}
