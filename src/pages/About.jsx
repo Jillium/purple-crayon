@@ -15,16 +15,21 @@ function About() {
 
     function changePicture() {
 
-
+        // for (var i = 0; i < pictureChoices.length; i++) {
+        //     console.log(pictureChoices[i]);
+        //     setNewPic(pictureChoices[i]);
+        // }
         
+    //    var index = 0;
+    //    index++;
        
         
         // flips through the pics randomly
-        var index = Math.floor(Math.random() * pictureChoices.length)
+        // var index = Math.floor(Math.random() * pictureChoices.length)
         
 
-        var randomPicture = pictureChoices[index];
-        setNewPic(randomPicture);
+        // var randomPicture = pictureChoices[index];
+        setNewPic(pic3);
         
     }
 
